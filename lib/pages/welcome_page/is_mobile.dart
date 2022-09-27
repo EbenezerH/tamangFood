@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants/constants.dart';
 import '../../widgets/app_text.dart';
 import '../../widgets/app_text_bold.dart';
@@ -13,7 +12,6 @@ class IsMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        //color: Colors.grey.withOpacity(0.5),
           margin: const EdgeInsets.only(top: 70, left: 20, right: 20, bottom: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -21,8 +19,7 @@ class IsMobile extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  // ignore: avoid_unnecessary_containers
-                  Container(child: Image.asset(logo)),
+                  Image.asset(logo),
                   const SizedBox(width: 5,),
                   Column(
                     children: const [
@@ -37,7 +34,6 @@ class IsMobile extends StatelessWidget {
                 child: Container(
                     margin: const EdgeInsets.only(bottom: 0),
                     decoration: BoxDecoration(
-                      //color: Colors.blue.withOpacity(0.5),
                         image: DecorationImage(
                             image: AssetImage(
                                 "assets/img/$welcomeImage"
@@ -53,7 +49,6 @@ class IsMobile extends StatelessWidget {
                 children: [
                   AppTextBold(
                     text: firstText,
-                    //color: AppColors.textColor2,
                     size: 30, center: true,
                   ),
                   const SizedBox(height: 10,),
